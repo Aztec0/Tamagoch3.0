@@ -55,6 +55,7 @@ class Pet
       return Controller.change_params(@request, 'energy') if @request.params['energy']
       return Controller.change_params(@request, 'happiness') if @request.params['happiness']
       return Controller.change_params(@request, 'cleanness') if @request.params['cleanness']
+      return Controller.change_params(@request, 'spotting') if @request.params['spotting']
     else
       Rack::Response.new('Not Found', 404)
     end
