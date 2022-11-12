@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Tamagotchi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+  <div class="container text-center">
+  <div class="row">
+    <div class="col">
+    <div class="card" style="width: 18rem;">
+    <img src="https://place-puppy.com/300x300" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Healt</h5>
+      <p class="card-text"><%= get('health')%></p>
+    </div>
+  </div>
+    </div>
+    <div class="col">
+    <div class="card" style="width: 18rem;">
+    <img src="https://place-puppy.com/300x300" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Food</h5>
+      <p class="card-text"><%= get('food')%></p>
+    </div>
+    </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+    <div class="card" style="width: 18rem;">
+    <img src="https://place-puppy.com/300x300" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Food</h5>
+      <p class="card-text"><%= get('food')%></p>
+    </div>
+    <div class="col">
+    <div class="card" style="width: 18rem;">
+    <img src="https://place-puppy.com/300x300" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Food</h5>
+      <p class="card-text"><%= get('food')%></p>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+      <img src="https://place-puppy.com/300x300" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Food</h5>
+        <p class="card-text"><%= get('food')%></p>
+    </div>
+  </div>
+</div>
+
+<%= get('energy')%>         
+                <form action = "/change" method = "get">
+                <div class="row align center">
+                    <button class="waves-effect waves-light btn red" name="health" value="health">health</button>
+                    <button class="waves-effect waves-light btn blue"name="food" value="food">food</button>
+                    <button class="waves-effect waves-light btn pink" name="energy" value="energy">energy</button>
+                    <button class="waves-effect waves-light btn deep-orange" name="cleanness" value="cleanness">cleanness</button>
+                    <button class="waves-effect waves-light btn green" name="happiness" value="happiness">happiness</button>
+                    <button class="waves-effect waves-light btn indigo"name="spotting" value="spotting">spotting</button>
+                    <a onclick="M.toast({html: 'WOF WOOOF!!!'})" class="btn amber">voice</a>                           
+                </div>
+                </form>
+                <div class="row align center">
+                <form action="/exit" method="get">
+                <button class="waves-effect waves-light btn brown" name="exit" value="exit">exit</button>
+                </form>   
+                </div>
+        </div>
+        </div>
+       </div>
+     </div>
+  </body>
+</html>
