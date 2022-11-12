@@ -9,78 +9,76 @@
   </head>
   <body>
     <h1 class="container text-center"><%=name%></h1>
-  <div class="container text-center">
-  <div class="row">
-    <div class="col">
-      <div class="card" style="width: 10rem; center">
-  <img src="https://place-puppy.com/150x150" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Health</h5>
-    <p class="card-text"><%= get('health')%></p>
-  </div>
-</div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 10rem; center">
+          <img src="https://place-puppy.com/150x150" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Health</h5>
+              <p class="card-text"><%= get('health')%></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 10rem;">
+            <img src="https://place-puppy.com/150x150" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Food</h5>
+              <p class="card-text"><%= get('food')%></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 10rem;">
+            <img src="https://place-puppy.com/150x150" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Energy</h5>
+              <p class="card-text"><%= get('energy')%></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 10rem;">
+            <img src="https://place-puppy.com/150x150" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cleanness</h5>
+              <p class="card-text"><%= get('cleanness')%></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 10rem;">
+            <img src="https://place-puppy.com/150x150" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Happiness</h5>
+              <p class="card-text"><%= get('happiness')%></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col">
-      <div class="card" style="width: 10rem;">
-  <img src="https://place-puppy.com/150x150" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Food</h5>
-    <p class="card-text"><%= get('food')%></p>
-  </div>
-</div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="card" style="width: 10rem;">
-  <img src="https://place-puppy.com/150x150" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Energy</h5>
-    <p class="card-text"><%= get('energy')%></p>
-  </div>
-</div>
-    </div>
-    <div class="col">
-      <div class="card" style="width: 10rem;">
-  <img src="https://place-puppy.com/150x150" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Cleanness</h5>
-    <p class="card-text"><%= get('cleanness')%></p>
-  </div>
-</div>
-    </div>
-    <div class="col">
-      <div class="card" style="width: 10rem;">
-  <img src="https://place-puppy.com/150x150" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Happiness</h5>
-    <p class="card-text"><%= get('happiness')%></p>
-  </div>
-</div>
-    </div>
-  </div>
-</div>
-      <br></br>
-      <div class="container text-center">
+
+    <br></br>
+
+    <div class="container text-center">
       <form action = "/change"method = "get">
-      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
           <button class="btn btn-primary" name="health" value="health">health</button>
           <button class="btn btn-secondary" name="food" value="food">food</button>
           <button class="btn btn-success" name="energy" value="energy">energy</button>
           <button class="btn btn-warning" name="cleanness" value="cleanness">cleanness</button>
           <button class="btn btn-info" name="happiness" value="happiness">happiness</button>
           <button class="btn btn-dark" name="spotting" value="spotting">spotting</button>
-      </div>
+        </div>
       </form>
-      </div>
-                <div class="container text-center">
-                <form action="/exit" method="get">
-                <button class="btn btn-danger" name="exit" value="exit">exit</button>
-                </form>   
-                </div>
-        </div>
-        </div>
-       </div>
-     </div>
+    </div>
+    <div class="container text-center">
+      <form action="/exit" method="get">
+        <button class="btn btn-danger" name="exit" value="exit">exit</button>
+      </form>   
+    </div>
   </body>
 </html>
